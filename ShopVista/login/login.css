@@ -1,0 +1,73 @@
+body {
+    /* background-color: rgb(13, 13, 131); */
+    margin:0;
+}
+
+.right{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:30px;
+  font-style: normal;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.containerc {
+    height: 600px;
+    width: 1100px;
+    background-color: white;
+    border-radius: 2%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    
+}
+
+.productImg{
+    height:600px;
+    width:500px;
+    /* padding:40px; */
+}
+
+.right{
+    text-align: center;
+
+}
+
+.signup{
+    background-color: green;
+    border-radius: 8px;
+    height: 50px;
+    width: 120px;
+    color: white;
+}
+input[type="text"] {
+    border: none;
+    border-radius: 5px; /* Optionally, you can add border-radius for a rounded appearance */
+    padding: 5px; /* Optionally, you can add padding for spacing */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: none;
+}
+
+
+@media screen and (max-width:547px){
+    .productImg{
+        visibility: hidden;
+    }
+
+}
+
+
+.saveaccinfo{
+    color:green;
+}

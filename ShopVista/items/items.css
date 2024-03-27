@@ -1,0 +1,100 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.leftMenu {
+  flex: 1;
+}
+
+.search{
+  padding: 10px;
+  width: 200px;
+  border: 1px solid gray;
+}
+
+h1{
+  font-size: 30px;
+  color: #555;
+  font-weight: 300;
+}
+
+
+.cats{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cat{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+.content {
+  flex: 4;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+img{
+  width: 150px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.name{
+  font-weight: 300;
+}
+
+
+
+
+
+
+.galleryItem {
+  position: relative; /* Position relative for absolute positioning of text */
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.galleryImg {
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.galleryItem:hover .galleryImg {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+.galleryTitle {
+  position: absolute; /* Position the title absolutely */
+  bottom: 0; /* Align the title to the bottom */
+  left: 0; /* Align the title to the left */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white; /* White text color */
+  padding: 10px; /* Padding around the title */
+  margin: 0; /* Remove default margin */
+  width: 100%; /* Full width */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+  opacity: 0; /* Initially hidden */
+}
+
+.galleryItem:hover .galleryTitle {
+  opacity: 1; /* Show title on hover */
+}
